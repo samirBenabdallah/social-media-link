@@ -1,0 +1,78 @@
+@font-face {
+  font-family: Inter;
+  src: url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+:root {
+  --font-weigth-4: 400;
+  --font-weigth-4: 600;
+  --font-weigth-4: 700;
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center-flex {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+button {
+  border: none;
+  outline: none;
+}
+body {
+  background-color: var(--Off-Black);
+  width: 100vw;
+  height: 100vh;
+  color: var(--White);
+  font-family: Inter;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 80%;
+  padding-block: 20px;
+  background-color: var(--Dark-Grey);
+  border-radius: 20px;
+}
+body main > img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+body main h1 {
+    font-size: x-large;
+}
+body p {
+  font-size: 14px;
+}
+body main > .bio {
+  color: var(--Green);
+  margin-block: 7px;
+}
+body main > p:not(.bio) {
+  margin-block: 10px;
+}
+body main > button {
+  height: 40px;
+  width: 80%;
+  background-color: var(--Grey);
+  color: var(--White);
+  border-radius: 5px;
+  font-weight: 600;
+  margin-block: 10px;
+}
+body main > button:hover {
+  transition: all ease 0.5s;
+  background-color: var(--Green);
+  color: var(--Off-Black);
+  cursor: pointer;
+}

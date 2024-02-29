@@ -1,0 +1,10 @@
+@media screen and (max-width:500px) {
+    body main {
+        height: 60% ;
+    }
+}
+@media screen and (max-height:1180px) and (max-width:500px) {
+    body main {
+        height: 50%;
+    }
+}
